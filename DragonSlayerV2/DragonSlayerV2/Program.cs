@@ -10,6 +10,12 @@ namespace DragonSlayerV2
     {
         static void Main(string[] args)
         {
+            Game myGame = new Game();
+            myGame.Play();
+
+            //keep console open 
+            Console.ReadKey();
+
         }
     }
 }

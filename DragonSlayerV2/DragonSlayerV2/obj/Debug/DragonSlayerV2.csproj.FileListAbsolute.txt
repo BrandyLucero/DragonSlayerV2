@@ -1,1 +1,2 @@
 C:\Users\Technologist SP\Documents\GitHub\DragonSlayerV2\DragonSlayerV2\DragonSlayerV2\bin\Debug\DragonSlayerV2.exe.config
+C:\Users\Technologist SP\Documents\GitHub\DragonSlayerV2\DragonSlayerV2\DragonSlayerV2\obj\Debug\DragonSlayerV2.csprojResolveAssemblyReference.cache
