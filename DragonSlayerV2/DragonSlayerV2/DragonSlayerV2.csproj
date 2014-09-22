@@ -32,8 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,14 +48,92 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDemographic.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DragonSlayerV2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DragonSlayerV2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DragonSlayerV2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DragonSlayerV2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DragonSlayerV2.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
     <Compile Include="Enemy.cs" />
+    <Compile Include="Food.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs" />
+    <Compile Include="HighScore.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Detail.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs" />
+    <Compile Include="Product.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shipper.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Territory.cs">
+      <DependentUpon>DragonSlayerV2.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="DragonSlayerV2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DragonSlayerV2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DragonSlayerV2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DragonSlayerV2.edmx</DependentUpon>
+      <LastGenOutput>DragonSlayerV2.Context.cs</LastGenOutput>
+    </None>
+    <None Include="DragonSlayerV2.edmx.diagram">
+      <DependentUpon>DragonSlayerV2.edmx</DependentUpon>
+    </None>
+    <None Include="DragonSlayerV2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DragonSlayerV2.edmx</DependentUpon>
+      <LastGenOutput>DragonSlayerV2.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
